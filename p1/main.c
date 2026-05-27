@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    char arr[11];
+    char arr[10];
     char max_char='\0';
     int max_count=0;
     
