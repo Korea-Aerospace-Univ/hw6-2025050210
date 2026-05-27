@@ -11,10 +11,10 @@ int main(void)
     scanf("%d", &N);
     
     for(int *p=arr1; p<arr1+N; p++){
-        scanf("%d", (p+i));
+        scanf("%d", p);
     }
-    for(int *q=arr2; p<arr2+N; p++){
-            scanf("%d", (q+i));
+    for(int *q=arr2; q<arr2+N; q++){
+            scanf("%d", q);
     }
     for(int *p=arr1, *q=arr2+(N-1); p<arr1+N; p++,q--){
         int sum=*p+*q;
