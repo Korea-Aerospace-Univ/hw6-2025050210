@@ -21,9 +21,8 @@ int main(void)
     }
     for(i=0; i<N; i++){
         int sum=*(p+i)+*(q+(N-1-i));
-        printf("%d\0", sum);
+        printf(" %d", sum);
     }
-    printf("\n");
     
     return 0;
 }
