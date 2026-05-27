@@ -8,22 +8,20 @@ int main(void)
     int i;
     int sum;
     
-    int *p=arr1;
-    int *q=arr2;
-    
     scanf("%d", &N);
     
-    for(i=0; i<N; i++){
+    for(int *p=arr1; p<arr1+N; p++){
         scanf("%d", (p+i));
     }
-    for(i=0; i<N; i++){
-        scanf("%d", (q+i));
+    for(int *q=arr2; p<arr2+N; p++){
+            scanf("%d", (q+i));
     }
-    for(i=0; i<N; i++){
-        int sum=*(p+i)+*(q+(N-1-i));
+    for(int *p=arr1, *q=arr2+(N-1); p<arr1+N; p++,q--){
+        int sum=*p+*q;
         printf(" %d", sum);
     }
     
     return 0;
 }
+
 
